@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Budget calculator</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="header">
+            <h1><span>money</span> calculator</h1>
+        </div>
+        <div class="container">
+            <h2>Budget calculation</h2>
+            <div class="input-blocks">
+                <div class="data-input">
+                    <div class="obligatory-expenses">
+                        <h3>Enter required expenses</h3>
+                        <div class="obligatory-block">
+                            <label for="obligatory">
+                                <input type="text" id="obligatory-first">
+                            </label>
+                            <label for="price">
+                                <input type="text" id="price-first">
+                            </label>
+                        </div>
+                        <div class="obligatory-block">
+                            <label for="obligatory">
+                                <input type="text" id="obligatory-second">
+                            </label>
+                            <label for="price">
+                                <input type="text" id="price-second">
+                            </label>
+                        </div>
+                        <button class="approve">Approve</button>
+                    </div>
+                    <div class="optional-expenses">
+                        <h3>Enter optional expenses</h3>
+                        <div class="optional-block">
+                            <input type="text" class="optional">
+                            <input type="text" class="optional">
+                            <input type="text" class="optional">
+                        </div>
+                        <button class="approve">Approve</button>
+                    </div>
+                    <div class="daily-budget">
+                        <h3>Daily budget calculation</h3>
+                        <button class="approve">Approve</button>
+                    </div>
+                    <div class="possible-income">
+                        <h3>Enter income items (separated by commas)</h3>
+                    </div>
+                    <div class="deposits">
+                        <p>Do you have any deposits?</p>
+                        <input type="checkbox" name="" id="check">
+                        <div class="deposits-data">
+                            <label for="sum">Sum
+                                <input type="number" name="" id="sum">
+                            </label>
+                            <label for="percent">Percent
+                                <input type="number" name="" id="percent">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="calculation">
+                        <button class="approve start">Start calculation</button>
+                    </div>
+                </div>
+                <div class="results">
+                    <div class="output-results">
+                        <p id="income">Income</p>
+                        <p id="daily">1 day budget</p>
+                        <p id="level">Income level</p>
+                        <p id="obligatory-exp">Obligatory expenses</p>
+                        <p id="possible">Possible expenses</p>
+                        <p id="add-income">Additional income</p>
+                        <p id="month-save">Savings for 1 month</p>
+                        <p id="year-save">Savings for 1 year</p>
+                    </div>
+                    <div class="date">
+                        <label for="year">Year
+                            <input type="number" name="" id="year">
+                        </label>
+                        <label for="month">Month
+                            <input type="number" name="" id="month">
+                        </label>
+                        <label for="day">Day
+                            <input type="number" name="" id="day">
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
